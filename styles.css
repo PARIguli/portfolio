@@ -555,8 +555,8 @@ nav a[aria-current=page] {
 
 .feature-inner {
     display: grid;
-    grid-template-columns: .55fr .9fr 1.2fr;
-    gap: 5%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(32px, 6vw, 88px);
     align-items: center
 }
 
@@ -1295,6 +1295,7 @@ nav a[aria-current=page] {
 }
 
 .art-site-card {
+    grid-column: 1 / -1;
     color: inherit;
     text-align: center;
     transition: border-color .2s ease, transform .2s ease
