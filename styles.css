@@ -610,6 +610,10 @@ nav a[aria-current=page] {
     gap: 15px
 }
 
+#artGallery {
+    grid-template-columns: minmax(0, 1fr)
+}
+
 .uploaded-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -627,6 +631,12 @@ nav a[aria-current=page] {
     height: 230px;
     display: block;
     object-fit: cover
+}
+
+#artGallery .uploaded-card img {
+    height: clamp(300px, 34vw, 410px);
+    object-fit: contain;
+    background: var(--surface-raised)
 }
 
 .uploaded-meta {
