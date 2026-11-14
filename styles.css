@@ -444,8 +444,10 @@ nav a[aria-current=page] {
 }
 
 .work-section {
-    padding-top: 35px;
-    padding-bottom: 115px
+    padding: 38px 28px 44px;
+    background: linear-gradient(145deg, #1B1D20, #151617 72%);
+    border: 1px solid #42454B;
+    border-radius: 10px
 }
 
 .section-heading {
@@ -656,8 +658,10 @@ nav a[aria-current=page] {
 }
 
 .design-section {
-    padding-top: 110px;
-    padding-bottom: 115px
+    padding: 76px 28px 52px;
+    background: linear-gradient(145deg, rgba(33, 34, 34, .96), rgba(20, 21, 22, .98));
+    border: 1px solid var(--border);
+    border-radius: 10px
 }
 
 .design-heading,
@@ -821,7 +825,8 @@ nav a[aria-current=page] {
 
 .ai-section {
     padding-top: 110px;
-    padding-bottom: 112px
+    padding-bottom: 112px;
+    border-top: 1px solid var(--border)
 }
 
 .ai-content {
@@ -936,13 +941,12 @@ nav a[aria-current=page] {
 .contact-section {
     background: radial-gradient(ellipse at 92% 8%, rgba(215, 25, 38, .08), transparent 32%), linear-gradient(135deg, #191718, #111213 62%);
     border-top: 1px solid var(--border);
-    padding-top: 76px;
-    padding-bottom: 22px;
+    padding: 76px 28px 22px;
     max-width: none
 }
 
 .contact-section .section-kicker {
-    color: var(--red-light)
+    color: #FFFFFF
 }
 
 .contact-content {
@@ -950,6 +954,7 @@ nav a[aria-current=page] {
 }
 
 .contact-content h2 {
+    color: var(--text);
     font-size: clamp(48px, 7vw, 82px)
 }
 
@@ -972,18 +977,18 @@ nav a[aria-current=page] {
 
 .contact-links {
     display: flex;
-    gap: 18px;
+    gap: 25px;
     flex-wrap: wrap;
-    margin-top: 25px
+    margin-top: 70px
 }
 
 .contact-links a,
 .contact-links span {
     font: 10px var(--mono);
     letter-spacing: .05em;
-    color: #E5DEDB;
+    color: #eeebea;
     border-bottom: 1px solid var(--border);
-    padding-bottom: 5px
+    padding-bottom: 10px
 }
 
 .contact-links a:hover {
@@ -1111,6 +1116,11 @@ nav a[aria-current=page] {
         width: min(100% - 34px, 500px)
     }
 
+    .work-section {
+        padding: 28px 18px 32px;
+        border-radius: 8px
+    }
+
     .topline {
         font-size: 8px;
         padding: 0 17px
@@ -1198,6 +1208,16 @@ nav a[aria-current=page] {
         min-height: 270px
     }
 
+    .design-section {
+        padding: 48px 18px 30px;
+        border-radius: 8px
+    }
+
+    .ai-section {
+        padding-top: 64px;
+        padding-bottom: 72px
+    }
+
     .design-heading,
     .dev-heading {
         display: block
@@ -1250,7 +1270,7 @@ nav a[aria-current=page] {
     }
 
     .contact-section {
-        padding-top: 58px
+        padding: 58px 18px 20px
     }
 
     .contact-content {
@@ -1334,6 +1354,7 @@ nav a[aria-current=page] {
     color: var(--muted);
     font-size: 12px
 }
+
 /* Editorial card depth */
 .work-card {
     position: relative;
