@@ -61,4 +61,4 @@ async function deleteItem(item){
   await loadItems();
 }
 if(!ready){message("loginStatus","Setup needed: add your Supabase project URL and public anon key to config.js.");}
-else{showSession();client.auth.onAuthStateChange(()=>showSession());}
+else{message("loginStatus","Supabase connected. Sign in with your admin account.");showSession();client.auth.onAuthStateChange(()=>showSession());}
