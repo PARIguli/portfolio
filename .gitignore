@@ -1,0 +1,6 @@
+# Local secrets/configuration
+.env
+.env.*
+# Keep your Supabase URL and public anon key out of shared commits if preferred
+.DS_Store
+Thumbs.db

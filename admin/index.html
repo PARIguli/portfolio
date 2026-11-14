@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Portfolio Admin — Parigul Ziad</title><link rel="stylesheet" href="admin.css"></head>
+<body>
+  <main class="shell">
+    <a class="back" href="../index.html">← View public website</a>
+    <section class="login-panel" id="loginPanel">
+      <div class="brand">PZ<span>.</span></div><p class="eyebrow">PRIVATE WORKSPACE</p><h1>Your creative<br><em>control room.</em></h1>
+      <p class="sub">Sign in to manage your portfolio, projects, certificates and publications.</p>
+      <form id="loginForm"><label>Email address<input type="email" id="email" required autocomplete="username"></label><label>Password<input type="password" id="password" required autocomplete="current-password"></label><button type="submit">Sign in ↗</button></form>
+      <p class="status" id="loginStatus">Connect Supabase in config.js before signing in.</p>
+    </section>
+    <section id="dashboard" hidden>
+      <header class="dash-head"><div><div class="brand">PZ<span>.</span></div><p class="eyebrow">PRIVATE WORKSPACE</p><h1>Good to see you.</h1></div><button id="logoutBtn" class="secondary">Sign out</button></header>
+      <div class="welcome"><div><span class="eyebrow">YOUR PORTFOLIO</span><h2>Make room for<br><em>what’s next.</em></h2><p>Manage the work you want the world to see.</p></div><div class="stat"><strong id="itemCount">0</strong><span>PORTFOLIO ITEMS</span></div></div>
+      <section class="manager">
+        <div class="manager-title"><div><span class="eyebrow">CONTENT MANAGER</span><h2>Add something new</h2></div></div>
+        <form id="itemForm" class="item-form">
+          <label>Title<input id="title" required placeholder="e.g. Editorial illustration"></label>
+          <label>Category<select id="category"><option value="art">Art & Illustration</option><option value="graphic">Graphic Design</option><option value="uiux">UI/UX Design</option><option value="development">Development Project</option><option value="ai">AI & Technology</option><option value="certificate">Certificate</option><option value="publication">Publication</option></select></label>
+          <label>Description<textarea id="description" rows="3" placeholder="A short description"></textarea></label>
+          <label>Image file<input id="imageFile" type="file" accept="image/*" required></label>
+          <label class="check"><input id="published" type="checkbox"> Publish this item on my website</label>
+          <button type="submit">Upload and save ↗</button>
+        </form><p id="formStatus" class="status"></p>
+      </section>
+      <section class="manager"><div class="manager-title"><div><span class="eyebrow">YOUR LIBRARY</span><h2>Saved items</h2></div><button id="refreshBtn" class="secondary">Refresh</button></div><div id="itemsList" class="items-list"><p class="sub">Your saved items will appear here.</p></div></section>
+      <p class="footer-note">Only your authenticated account can manage this content. Keep your login details private.</p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="../config.js"></script><script src="admin.js"></script>
+</body></html>
